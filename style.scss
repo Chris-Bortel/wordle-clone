@@ -1,0 +1,62 @@
+body {
+  width: 100%;
+}
+
+.wordle-clone {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 375px;
+
+  h1 {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin-bottom: 0;
+    padding-bottom: 1.35rem;
+
+  }
+}
+
+#game-board, #keyboard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // width: 500px;
+  padding-top: 4rem;
+}
+
+.letter-box, .key-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 3px;
+  margin: 2px;
+  font-weight: 700;
+  height: 3rem;
+  text-transform: uppercase;  
+}
+
+.letter-box {
+  font-size: 2.5rem;
+  width: 3rem;
+}
+
+.key-box {
+  font-size: 1rem;
+  width: 1.69rem;
+}
+
+.enter-box, .backspace-box {
+  width: 3rem;
+  font-size: .75rem;
+}
+.letter-row, .key-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.filled-box {
+  border: 2px solid black;
+}
